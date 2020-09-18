@@ -1,0 +1,1 @@
+import*as e from"../web_modules/react.js";export const createElement=(a,t,s)=>!t&&!s?e.createElement(a):Array.isArray(t)?e.createElement(a,{},...t):s?e.createElement(a,t,...s):e.createElement(a,t);export{Hooks as hooks}from"../web_modules/@lewisl9029/render-hooks.js";

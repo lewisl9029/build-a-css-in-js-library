@@ -1,0 +1,34 @@
+{
+  "name": "build-a-css-in-js-library",
+  "version": "1.0.0",
+  "main": "public/index.js",
+  "type": "module",
+  "repository": "https://github.com/lewisl9029/build-a-css-in-js-library",
+  "author": "Lewis Liu <lewisl9029@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "serve": "serve ./docs"
+  },
+  "devDependencies": {
+    "@babel/eslint-plugin": "^7.11.5",
+    "@lewisl9029/eslint-config": "^0.0.14",
+    "@snowpack/plugin-react-refresh": "^2.1.0",
+    "eslint-import-resolver-custom-alias": "^1.2.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "serve": "^11.3.2",
+    "snowpack": "^2.10.3"
+  },
+  "dependencies": {
+    "@lewisl9029/render-hooks": "^1.0.5",
+    "@lewisl9029/use-styles": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "spectacle": "^6.2.0"
+  }
+}

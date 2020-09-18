@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@lewisl9029/render-hooks": "./@lewisl9029/render-hooks.js",
+    "@lewisl9029/use-styles": "./@lewisl9029/use-styles.js",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js",
+    "spectacle": "./spectacle.js"
+  }
+}
