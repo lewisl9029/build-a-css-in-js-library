@@ -195,6 +195,8 @@ const link = ({ to }) =>
 
 const range = (length) => Array.from({ length }).map((_value, index) => index)
 
+// This has render perf problems lol
+// TODO: Break it down
 export const presentation = () =>
   a_.cE('div', { className: style_.useStyles({ fontFamily: 'Inter' }, []) }, [
     a_.cE(
