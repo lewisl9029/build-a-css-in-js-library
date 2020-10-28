@@ -9,4 +9,4 @@ export const createElement = (component, propsOrChildren, children) =>
     ? react_.createElement(component, propsOrChildren, ...children)
     : react_.createElement(component, propsOrChildren)
 
-export { Hooks as hooks } from '@lewisl9029/render-hooks'
+export { hooks } from '@lewisl9029/render-hooks'

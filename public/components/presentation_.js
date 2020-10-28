@@ -974,20 +974,19 @@ const NotAlwaysVisible = () => {
                     }),
                   ]),
                 ]),
-                a_.cE(component_.hooks, {
-                  children: () =>
-                    a_.cE(
-                      item,
-                      {
-                        onClick: style_.useGoDark(),
-                      },
-                      [
-                        style_.useGoneDark()
-                          ? 'Nothing happened? Try going back to previous slides'
-                          : 'Click here to GO DARK',
-                      ],
-                    ),
-                }),
+                component_.hooks(() =>
+                  a_.cE(
+                    item,
+                    {
+                      onClick: style_.useGoDark(),
+                    },
+                    [
+                      style_.useGoneDark()
+                        ? 'Nothing happened? Try going back to previous slides'
+                        : 'Click here to GO DARK',
+                    ],
+                  ),
+                ),
               ]),
             ]),
           ]),
