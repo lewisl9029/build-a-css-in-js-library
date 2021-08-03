@@ -7,3 +7,7 @@ const root = document.createElement('div')
 document.body.appendChild(root)
 
 reactDom_.render(a_.cE(app_.app), root)
+
+if (import.meta.hot) {
+  import.meta.hot.accept()
+}

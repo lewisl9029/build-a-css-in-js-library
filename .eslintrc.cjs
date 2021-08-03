@@ -1,17 +1,17 @@
-const config = require('@lewisl9029/eslint-config').config({
-  environment: 'browser',
-})
+const {
+  eslintConfig,
+  eslintConfigWithImportmap,
+} = require("@lewisl9029/project-boilerplate");
+
+const config = eslintConfigWithImportmap({
+  config: eslintConfig({
+    isRoot: true,
+    environment: "browser",
+  }),
+  importmapPath: "./app/production.importmap",
+  root: "./app",
+});
 
 module.exports = {
   ...config,
-  settings: {
-    'import/resolver': {
-      'eslint-import-resolver-custom-alias': {
-        alias: {
-          public: './public',
-        },
-        extensions: ['.js'],
-      },
-    },
-  },
-}
+};

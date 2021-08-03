@@ -1,6 +1,6 @@
-const config = require('@lewisl9029/eslint-config').babelConfig
+const babelConfig = require("@lewisl9029/project-boilerplate").babelConfig;
 
 module.exports = (api) => {
-  api.cache.forever()
-  return config
-}
+  api.cache(true);
+  return babelConfig;
+};
